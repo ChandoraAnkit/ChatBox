@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+
+        android:id="@+id/user_image"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/default_image" />
+
+    <LinearLayout
+        android:layout_toRightOf="@+id/user_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            style="@style/TextAppearance.AppCompat.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ankit Chandora" />
+        <ImageView
+            android:layout_width="10dp"
+            android:src="@drawable/online"
+            android:id="@+id/user_online"
+            android:layout_height="10dp"
+            android:layout_marginLeft="8dp"
+            android:visibility="invisible"
+            android:layout_marginTop="24dp"
+            />
+
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/user_status"
+        style="@style/TextAppearance.AppCompat.Small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My life my rules..."
+        android:layout_marginLeft="21dp"
+        android:layout_alignBottom="@+id/user_image"
+        android:layout_toRightOf="@+id/user_image"
+        android:layout_toEndOf="@+id/user_image"
+        android:layout_marginBottom="10dp" />
+
+</RelativeLayout>

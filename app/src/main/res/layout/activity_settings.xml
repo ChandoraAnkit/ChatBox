@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.chandoras.chatbox.SettingsActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/settings_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/default_image" />
+
+    <TextView
+        android:id="@+id/settings_name"
+        android:layout_width="wrap_content"
+        android:text="Ankit Chandora"
+        android:paddingTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+        android:layout_below="@+id/settings_image"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/settings_status"
+        android:layout_width="wrap_content"
+        android:text="Life is worth living!"
+        android:paddingTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="15sp"
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:layout_below="@+id/settings_name"
+        android:layout_height="wrap_content" />
+
+    <ProgressBar
+        android:id="@+id/image_progress"
+        android:layout_width="50dp"
+        android:visibility="gone"
+        android:layout_above="@+id/settings_change_imageBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:layout_height="50dp" />
+    <Button
+        android:id="@+id/settings_change_imageBtn"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/settings_change_statusBtn"
+        android:text="Change image"
+        android:padding="20dp"
+
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/settings_change_statusBtn"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Change status"
+        android:padding="20dp"
+       android:layout_marginBottom="40dp"
+        android:layout_height="wrap_content" />
+</android.widget.RelativeLayout>
